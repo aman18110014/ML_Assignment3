@@ -1,0 +1,28 @@
+Time compexity during training a logistic regression model
+
+    If w is a vector of size d. The operation yi*w^t*xi takes O(d) time.
+    Looping it on n data points and to find the max sum:  n steps
+    Therefore, time compexity = n(O(d)) = O(nd)
+
+
+Time compexity during testing a logistic regression model
+
+    For any new data point, only operation to perform w^t * xi.
+    Since w is a vector of size d, the operation w^t*xi takes O(d) steps
+    Therefore, time compexity = O(d)
+
+
+Space compexity during training a logistic regression model
+
+    storing in memory: x, y, w and b. 
+    b is a constant, storing takes O(1) operation. 
+    x and y are matrices of order (n x d) and (n x 1) respectively. 
+    Storing x and y takes O(nd + n) steps. 
+    w is a vector of size d. Storing it takes O(d) steps.
+    Therefore, space compexity = O(nd + n +d).
+
+
+Space compexity during testing a logistic regression model
+
+    To classify the data points we only perform w^t*x1.
+    Therefore, space compexity = O(d)
