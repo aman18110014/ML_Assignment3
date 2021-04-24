@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn import datasets
 import matplotlib.pyplot as plt
-from lr_2 import LogisticRegression
+from lr_1 import LogisticRegression
 def accuracy(y_true, y_pred):
     accuracy = np.sum(y_true == y_pred) / len(y_true)
     return accuracy
